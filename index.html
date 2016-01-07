@@ -1,0 +1,68 @@
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <form class="col s12 ng-pristine ng-valid">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="Title" value="Morning Announcement" type="text" class="validate">
+          <label for=“Title”>Title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="userId" type="text" class="validate">
+          <label for="name"> Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id=“id_number” type="text" class="validate">
+          <label for=“id_number”>Id Number</label>
+        </div>
+        <div class="input-field col s6">
+          <input id=“email” type="text" class="validate">
+          <label for="date">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id=“subject” type="text" class="validate">
+          <label for=“subject”>Subject (email subject)</label>
+        </div>
+        <div class="input-field col s6">
+          <input id=“affiliation” type="text" class="validate">
+          <label for=“affiliation”>Affiliation</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="related" type="text" class="validate">
+          <label for="related">Position within Affiliation</label>
+        </div>
+      </div>
+      <div class="row">
+         <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" />
+      <label for="filled-in-box">Fundraiser?</label>
+    </p>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="description" class="materialize-textarea"></textarea>
+          <label for="textarea1">Announcement(Verbatim, like exactly how you want it read)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 center-align">
+          <button ng-click="submit()" class="btn waves-effect waves-light btn-large " type="submit" name="action">Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
